@@ -1,32 +1,93 @@
+#define b1 digitalRead(b_1)
+#define b2 digitalRead(b_2)
+#define b3 digitalRead(b_3)
+#define b4 digitalRead(b_4)
+#define b5 digitalRead(b_5)
+#define dw digitalWrite
+const int led_1 = 7, b_1 = 13, b_2 = 12, b_3 = 11, b_4 = 10, b_5 = 9;
+
+
 void setup()
 {
-  pinMode(1, OUTPUT);
-  pinMode(2, OUTPUT);
-  pinMode(3, OUTPUT);
-  pinMode(4, OUTPUT);
-  pinMode(5, OUTPUT);
+  pinMode(led_1, OUTPUT);
+  pinMode(b_1, INPUT);
+  pinMode(b_2, INPUT);
+  pinMode(b_3, INPUT);
+  pinMode(b_4, INPUT);
+  pinMode(b_5, INPUT);
 }
 
 void loop()
 {
-  digitalWrite(1, HIGH);
-  delay(1000);
-  digitalWrite(2, HIGH);
-  delay(1000);
-  digitalWrite(3, HIGH);
-  delay(1000);
-  digitalWrite(4, HIGH);
-  delay(1000);
-  digitalWrite(5, HIGH);
-  delay(1000);
-  digitalWrite(1, LOW);
-  delay(1000);
-  digitalWrite(2, LOW);
-  delay(1000);
-  digitalWrite(3, LOW);
-  delay(1000);
-  digitalWrite(4, LOW);
-  delay(1000);
-  digitalWrite(5, LOW);
-  delay(1000);
+  if(b1 == 1){
+    dw(led_1, HIGH);
+    delay(200);
+    dw(led_1, LOW);
+  }
+  
+  if(b2 == 1){
+    dw(led_1, HIGH);
+    delay(200);
+    dw(led_1, LOW);
+    delay(200);
+    dw(led_1, HIGH);
+    delay(200);
+    dw(led_1, LOW);
+  }
+
+   if(b3 == 1){
+    dw(led_1, HIGH);
+    delay(200);
+    dw(led_1, LOW);
+    delay(200);
+    dw(led_1, HIGH);
+    delay(200);
+    dw(led_1, LOW);
+    delay(200);
+    dw(led_1, HIGH);
+    delay(200);
+    dw(led_1, LOW);
+  }
+
+   if(b3 == 1){
+    dw(led_1, HIGH);
+    delay(200);
+    dw(led_1, LOW);
+    delay(200);
+    dw(led_1, HIGH);
+    delay(200);
+    dw(led_1, LOW);
+    delay(200);
+    dw(led_1, HIGH);
+    delay(200);
+    dw(led_1, LOW);
+     delay(200);
+    dw(led_1, HIGH);
+    delay(200);
+    dw(led_1, LOW);
+  }
+
+  if(b3 == 1){
+    dw(led_1, HIGH);
+    delay(200);
+    dw(led_1, LOW);
+    delay(200);
+    dw(led_1, HIGH);
+    delay(200);
+    dw(led_1, LOW);
+    delay(200);
+    dw(led_1, HIGH);
+    delay(200);
+    dw(led_1, LOW);
+     delay(200);
+    dw(led_1, HIGH);
+    delay(200);
+    dw(led_1, LOW);
+    dw(led_1, LOW);
+    delay(200);
+    dw(led_1, HIGH);
+    delay(200);
+    dw(led_1, LOW);
+  }
+  
 }
